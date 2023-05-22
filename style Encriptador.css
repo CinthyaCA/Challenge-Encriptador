@@ -1,6 +1,5 @@
 body{
     background: #eee5b0;
-    font-family: 'Roboto Slab', serif;
     font-size: 32px;
 }
 
@@ -13,7 +12,7 @@ body{
 main{
     display: flex;
     margin-bottom: 50px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 
 #texto{
@@ -23,12 +22,16 @@ main{
     width: 635px;
     padding: 15px 15px;
     margin-top: 40px;
-    border-radius: 15px;
+    /*border-radius: 30px;*/
     text-transform: lowercase;
+    background-color: #eee5b0;
 }
 
 ::placeholder {
     font-size: 25px;
+    text-transform: none;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
 }
     #texto:focus{
         outline: none;
@@ -42,6 +45,7 @@ main{
 .informacion{
     font-size: 20px;
     margin-top: 10px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .botones{
@@ -55,6 +59,7 @@ main{
     width: 300px; 
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -73,15 +78,15 @@ main{
     background-image: url(Sherlock.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y:40px;
-    background-size: 70%;
+    background-position-y:20px;
+    background-size: 50%;
     border: none;
     font-size: 25px;
-    height: 490px; 
+    height: 485px; 
     width: 300px;
-    border-radius: 15px;
+    border-radius: 30px;
     margin-left: 165px;
-    padding: 15px 15px;
+    padding: 20px 20px;
     position: absolute;
     text-transform: lowercase;
 }
@@ -90,13 +95,39 @@ main{
     outline: none;
 }
 
+#mensajeNoEncontrado{
+    font-size: 23px;
+    text-align: center;
+    text-transform: none;
+    position: absolute;
+    display: block;
+    top: 60%;
+    font-weight: bold;
+    margin-left: 13.5%;
+    width: 300px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#ingreseTexto{
+        font-size: 20px;
+        text-align: center;
+        text-transform: none;
+        position: absolute;
+        display: block;
+        top: 70%;
+        margin-left: 13.5%;
+        width: 300px;
+        font-family: 'Nunito Sans', sans-serif;
+}
+
 #copiar{
     background-color: #9e9352;;
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
     width: 300px;
-    margin-left: 180px;
-    margin-top: 415px;
+    margin-left: 185px;
+    margin-top: 414px;
     padding: 15px 15px;
     position: absolute;
     border: none;
@@ -107,6 +138,7 @@ main{
 @media screen and (max-width:480px) {
     .logo{
         width: 6%;
+        margin-top: 6%;
     }
     main{
         margin-left: 2%;
@@ -129,10 +161,20 @@ main{
         height: 310px;
         width: 635px;
         margin-left: 0%;
-        background-size: 25%;
+        background-size: 18%;
+    }
+
+    #mensajeNoEncontrado{
+        margin-top: 450%;
+        margin-left: 400%;
+    }
+
+    #ingreseTexto{
+        margin-top: 570%;
+        margin-left: 400%;
     }
 
     #copiar{
-        margin-top: 750%;
+        margin-top: 760%;
     }
 }
