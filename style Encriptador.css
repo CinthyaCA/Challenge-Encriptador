@@ -1,0 +1,138 @@
+body{
+    background: #eee5b0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+}
+
+.logo{
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 4%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+#texto{
+    font-size: 25px;
+    border: none;
+    height: 310px;
+    width: 635px;
+    padding: 15px 15px;
+    margin-top: 40px;
+    border-radius: 15px;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    font-size: 25px;
+}
+    #texto:focus{
+        outline: none;
+    }
+
+.simboloInfo{
+    margin-right: 3px;
+    width: 2.5%;
+}
+
+.informacion{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.botones{
+    display: flex;
+    margin-top:18px;
+}
+
+#encriptar, #desencriptar{
+    background-color: #9e9352;
+    padding: 15px 15px;
+    width: 300px; 
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#desencriptar{
+    margin-left: 50px;
+}
+
+#encriptar:hover, #desencriptar:hover, #copiar:hover{
+    transform: scale(1.05);
+}
+
+#mensaje{
+    background: white;
+    background-image: url(Sherlock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y:40px;
+    background-size: 70%;
+    border: none;
+    font-size: 25px;
+    height: 490px; 
+    width: 300px;
+    border-radius: 15px;
+    margin-left: 165px;
+    padding: 15px 15px;
+    position: absolute;
+    text-transform: lowercase;
+}
+
+#mensaje:focus{
+    outline: none;
+}
+
+#copiar{
+    background-color: #9e9352;;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    margin-left: 180px;
+    margin-top: 415px;
+    padding: 15px 15px;
+    position: absolute;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .logo{
+        width: 6%;
+    }
+    main{
+        margin-left: 2%;
+    }
+    .ingreso{
+        position: absolute;
+        padding: 5% 5%;
+        padding-right: 7% ;
+    }
+    #texto{
+        width: 500;
+    }
+    .resultado{
+        position: absolute;
+        margin-top: 600px;
+        padding: 5% 5%;
+        padding-right: 7% ;
+    }
+    #mensaje{
+        height: 310px;
+        width: 635px;
+        margin-left: 0%;
+        background-size: 25%;
+    }
+
+    #copiar{
+        margin-top: 750%;
+    }
+}
