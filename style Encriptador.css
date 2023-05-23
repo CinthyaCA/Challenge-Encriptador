@@ -79,7 +79,7 @@ main{
 }
 
 #mensaje{
-    background: white;
+    background: #F4F4F4;
     background-image: url(Sherlock.png);
     background-repeat: no-repeat;
     background-position: center;
