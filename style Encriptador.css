@@ -1,5 +1,5 @@
 body{
-    background: #eee5b0;
+    background: #AE916E;
     font-size: 32px;
 }
 
@@ -22,9 +22,8 @@ main{
     width: 635px;
     padding: 15px 15px;
     margin-top: 40px;
-    /*border-radius: 30px;*/
     text-transform: lowercase;
-    background-color: #eee5b0;
+    background-color: #AE916E;
 }
 
 ::placeholder {
@@ -54,7 +53,6 @@ main{
 }
 
 #encriptar, #desencriptar{
-    background-color: #9e9352;
     padding: 15px 15px;
     width: 300px; 
     font-size: 18px;
@@ -65,8 +63,15 @@ main{
     cursor: pointer;
 }
 
+#encriptar{
+    background-color: #A8645B;
+    box-shadow: 0px 5px #694332;
+}
+
 #desencriptar{
     margin-left: 50px;
+    background-color: #7E8F3F;
+    box-shadow: 0px 5px #494825;
 }
 
 #encriptar:hover, #desencriptar:hover, #copiar:hover{
@@ -121,7 +126,8 @@ main{
 }
 
 #copiar{
-    background-color: #9e9352;;
+    background-color: #D28A08;
+    box-shadow: 0px 5px #9E5D06;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Nunito Sans', sans-serif;
